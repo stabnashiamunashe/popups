@@ -1,23 +1,31 @@
-/* Popup Styling */
-.popup {
+/* Modal Overlay Styling */
+#customPopupOverlay {
     display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+#customPopup {
+    background: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.popup-content {
-    text-align: center;
-}
-
-.close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
+/* Close Button Styling */
+#customPopup button {
     cursor: pointer;
 }
+
+/* Ensure the close button is visible on top of the modal */
+#customPopupOverlay button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+

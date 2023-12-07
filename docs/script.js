@@ -1,27 +1,27 @@
-// Function to show the popup
-function showPopup() {
-    var popup = document.getElementById('customPopup');
-    popup.style.display = 'block';
+// Function to show the modal overlay
+function showOverlay() {
+    var overlay = document.getElementById('customPopupOverlay');
+    overlay.style.display = 'flex'; // Use 'flex' to center the modal content
 }
 
-// Function to close the popup
-function closePopup() {
-    var popup = document.getElementById('customPopup');
-    popup.style.display = 'none';
+// Function to close the modal overlay
+function closeOverlay() {
+    var overlay = document.getElementById('customPopupOverlay');
+    overlay.style.display = 'none';
 }
 
 // Example: Listen for a custom event named "customPopupEvent"
 document.addEventListener('customPopupEvent', function () {
-    // Code to show the popup
-    console.log("Custom Event Listener Registered: For Testing PopUps")    
-    showPopup();
+    // Code to show the modal overlay
+    console.log("Custom Event Listener Registered: For Testing PopUps") 
+    showOverlay();
 });
 
-// Example: Trigger the custom event when a button is clicked
+// Dispatch the custom event when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    // Dispatch the custom event when the DOM is fully loaded
     document.dispatchEvent(new Event('customPopupEvent'));
     console.log("Custom Event Triggered: For Testing PopUps")
 });
+
 
 
