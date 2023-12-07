@@ -16,3 +16,12 @@ document.addEventListener('customPopupEvent', function () {
     console.log("Custom Event Listener Registered: For Testing PopUps")    
     showPopup();
 });
+
+// Example: Trigger the custom event when a button is clicked
+document.addEventListener('DOMContentLoaded', function () {
+    // Dispatch the custom event when the DOM is fully loaded
+    document.dispatchEvent(new Event('customPopupEvent'));
+    console.log("Custom Event Triggered: For Testing PopUps")
+});
+
+
