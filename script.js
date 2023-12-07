@@ -13,5 +13,6 @@ function closePopup() {
 // Example: Listen for a custom event named "customPopupEvent"
 document.addEventListener('customPopupEvent', function () {
     // Code to show the popup
+    console.log("Custom Event Listener Registered: For Testing PopUps")    
     showPopup();
 });
