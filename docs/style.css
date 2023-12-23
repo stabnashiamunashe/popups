@@ -107,8 +107,8 @@ h1,h2,h3,h4,h5,h6{
     font-size: 20px;
     padding: 15px;
     font-weight: 700;
-    background-color: var(--secondary-color);
-    color: rgb(15, 15, 218);
+    background-color: rgb(9, 13, 241)
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 5px;
     width: 100%;
