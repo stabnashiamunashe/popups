@@ -1,21 +1,17 @@
-:root {
-    --background-color: black;
-    --primary-color: rgb(75, 75, 75);
-    --secondary-color: rgb(1, 1, 160);
-    --text-color: rgb(90, 90, 90);
-}
-
-/* body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
+#customPopupOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    margin: 0;
-} */
+    /* backdrop-filter: blur(5px); Apply blur to the background */
+    z-index: 1000;
+}
 
-#customPopupOverlay {
+.popup {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
@@ -25,6 +21,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 9999;
 }
 
 .banner,
